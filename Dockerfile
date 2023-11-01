@@ -18,7 +18,7 @@ RUN poetry config virtualenvs.create false \
 
 EXPOSE 8000
 
-COPY HabitTrackerAPI ${APP_HOME}/
+COPY habits_project ${APP_HOME}/
 
 
 

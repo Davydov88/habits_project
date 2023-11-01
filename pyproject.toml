@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "habittrackerapi"
+name = "habits_project"
 version = "0.1.0"
 description = ""
 authors = ["Petr Davydov <Davydov.atc@yandex.ru>"]

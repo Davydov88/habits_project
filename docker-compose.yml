@@ -28,7 +28,7 @@ services:
 
   app:
     build:
-      context: HabitTrackerAPI
+      context: habits_project
     tty: true
     env_file:
       - .env
@@ -44,7 +44,7 @@ services:
     command: python3 manage.py runserver 0.0.0.0:8000
 
   celery:
-    build: HabitTrackerAPI
+    build: habits_project
     tty: true
     env_file:
       - .env
@@ -54,7 +54,7 @@ services:
       - app
 
   celery-beat:
-    build: HabitTrackerAPI
+    build: habits_project
     restart: always
     tty: true
     env_file:
@@ -65,7 +65,7 @@ services:
       - app
 
   tg-bot:
-    build: HabitTrackerAPI
+    build: habits_project
     restart: always
     tty: true
     env_file:
